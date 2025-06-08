@@ -4,6 +4,7 @@ import { Github, Linkedin, Mail, Phone, MapPin, GraduationCap, Code, Database, S
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import.meta.env.BASE_URL
 
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -101,7 +102,7 @@ const Index = () => {
             <div className="mb-8 flex justify-center">
               <div className="relative">
                 <img 
-                  src="/lovable-uploads/2591ad32-2020-4454-a1c8-8ed6385f2217.png" 
+                  src={`${import.meta.env.BASE_URL}lovable-uploads/2591ad32-2020-4454-a1c8-8ed6385f2217.png`} 
                   alt="IKRAM GRYACH" 
                   className="w-40 h-40 rounded-full mx-auto shadow-2xl border-4 border-white"
                 />
